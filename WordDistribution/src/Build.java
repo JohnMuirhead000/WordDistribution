@@ -1,6 +1,8 @@
 import java.util.*;
 
 public class Build {
+    
+    //This function builds a hash map from an array of stirngs with the key being a string, the value being the number of appearences in the array
     public static HashMap<String, Integer> BuildHash(String[] splited){
 
         HashMap<String, Integer> result = new HashMap<>();
@@ -18,7 +20,6 @@ public class Build {
 
     //This method is to sort the HashMap (got from youtube video) and put it into a LinkedList
     public static List<Map.Entry<String, Integer>>sort(HashMap<String, Integer> unsorted){
-
 
         List<Map.Entry<String, Integer>> list = new LinkedList<Map.Entry<String, Integer>>(unsorted.entrySet());
         Collections.sort(list, new Comparator<Map.Entry<String, Integer>>() {
